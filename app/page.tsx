@@ -1,9 +1,17 @@
-import Image from "next/image";
+import Hero from "@/components/hero";
+import Main from "@/components/main";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen flex-col items-center justify-between p-24">
-      <h1 className="mt-5">Home page</h1>
+    <div>
+    <Hero/>
+    <div className="mt-16">
+      <div className='text-center'>
+        <h2 className="text-4xl font-bold uppercase">Room & Rate</h2>
+        <p className="py-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. A, laudantium?</p>
+      </div>
+      <Main/>
+    </div>
     </div>
   );
 }

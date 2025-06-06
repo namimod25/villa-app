@@ -1,3 +1,9 @@
 @import "tailwindcss";
-@import "tailwindcss/base";
-@import "tailwindcss/components";
+
+.transition-all {
+  transition: all 0.3s ease-in-out;
+}
+
+.transform-rotate-180 {
+  transform: rotate(180deg);
+}
