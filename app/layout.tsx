@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Raleway } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar/navbar";
@@ -30,7 +31,9 @@ export default async function RootLayout({
         className={`${raleway.variable}  antialiased`}>
            <SessionProvider session={ session }>
            <Navbar/>
-            <main className="bg-gray-50 min-h-screen">{children}</main>
+            <main className="bg-gray-50 min-h-screen">{children}
+              <SpeedInsights/>
+            </main>
             <Footer/>
            </SessionProvider>
         
