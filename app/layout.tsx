@@ -29,13 +29,12 @@ export default async function RootLayout({
     <html lang="en">
       <body
         className={`${raleway.variable}  antialiased`}>
-           <SessionProvider session={ session }>
-           <Navbar/>
-            <main className="bg-gray-50 min-h-screen">{children}
-            </main>
-            <SpeedInsights/>
+          <SessionProvider session={ session }>
+          <Navbar/>
+            <main className="bg-gray-50 min-h-screen">{children}</main>
             <Footer/>
-           </SessionProvider>
+            {/*SpeedInsights/>*/}
+          </SessionProvider>
         
       </body>
     

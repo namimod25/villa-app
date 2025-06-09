@@ -7,6 +7,7 @@ import Link from 'next/link';
 import {useSession, signOut} from 'next-auth/react';
 import Image from 'next/image';
 
+
 const Navlink = () => {
     const [open, setOpen] = useState(false);
     const {data: session}  = useSession();
