@@ -50,7 +50,7 @@ model Reservation {
   updatedAt DateTime @updatedAt
   Room      Room     @relation(fields: [roomId], references: [id], onDelete: Cascade)
   User      User     @relation(fields: [userId], references: [id], onDelete: Cascade)
-  Payment   Payment?
+  payment   payment?
 }
 
 model Session {
@@ -104,7 +104,7 @@ model Account {
   @@id([provider, providerAccountId])
 }
 
-model Payment {
+model payment {
   id            String      @id
   method        String?
   amount        Int
