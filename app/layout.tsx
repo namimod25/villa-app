@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+//import { SpeedInsights } from "@vercel/speed-insights/next"
 import { Raleway } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/navbar/navbar";
